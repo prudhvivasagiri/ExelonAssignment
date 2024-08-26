@@ -1,0 +1,10 @@
+POST http://localhost:3000/cities/
+Content-Type: application/json
+
+{
+    "name": "hyd",
+    "population": 78,
+    "country": "india",
+    "latitude": 24.23,
+    "longitude": 25.21
+}
