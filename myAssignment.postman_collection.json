@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "0960d1d1-c48b-4f8e-af4d-4a9da4bc09cb",
+		"name": "myAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37924614"
+	},
+	"item": [
+		{
+			"name": "/cities/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"mumbi\",\r\n    \"population\": 45454,\r\n    \"country\":\"india\",\r\n    \"latitude\":25.23,\r\n    \"longitude\":21.22\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/cities/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cities",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cities/3/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"mumbi\",\r\n    \"population\": 4570,\r\n    \"country\":\"indi\",\r\n    \"latitude\":25.23,\r\n    \"longitude\":21.22\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/cities/3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cities",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cities/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cities/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cities",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/cities/?offset=1&limit=10&search_q=hy&population=17&order_by=name&order=asc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cities/?offset=1&limit=10&search_q=hy&population=17&order_by=name&order=asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cities",
+						""
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "search_q",
+							"value": "hy"
+						},
+						{
+							"key": "population",
+							"value": "17"
+						},
+						{
+							"key": "order_by",
+							"value": "name"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
